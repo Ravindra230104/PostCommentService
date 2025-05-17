@@ -20,31 +20,29 @@ A backend service that allows users to create posts and comments, designed with 
 
 ---
 
-## 📁 Folder Structure
+## 🏗️ Architecture Overview
 
-├── .env
-├── .gitignore
-├── app.js
+This project follows a **Modular MVC-like architecture** for clear separation of concerns and scalability:
 
-├── config/
-│   └── db.js
+- **Models**: Handle database schema and data operations using raw SQL or ORM.
+- **Controllers**: Contain business logic and interact with models to process client requests.
+- **Routes**: Define API endpoints and link them to corresponding controllers.
+- **Middleware**: Contains reusable functions like authentication, validation, etc.
+- **Config**: Centralized configuration files like database connection.
 
-├── controllers/
-│   ├── authController.js
-│   ├── commentController.js
-│   └── postController.js
+This structure keeps code clean, maintainable, and easy to extend with new features.
 
-├── middleware/
-│   └── auth.js
 
-├── models/
-│   ├── Comment.js
-│   ├── Post.js
-│   └── User.js
+## ✨ Features
 
-└── routes/
-    ├── auth.js
-    ├── comments.js
-    └── posts.js
+- **User Authentication** using JWT (JSON Web Tokens) for secure login and authorization.
+- **CRUD Operations** for Posts and Comments.
+- **Relational Database** (MySQL) with foreign key constraints to maintain data integrity.
+- **Modular Architecture** with clear separation of concerns (Models, Controllers, Routes, Middleware).
+- **Middleware-based Authentication** to protect routes.
+- **Error Handling** with appropriate HTTP status codes and messages.
+- **Timestamps** to track creation and update times of posts and comments.
+- **Scalable Design** suitable for extending features like rich text support, notifications, etc.
+
 
 
