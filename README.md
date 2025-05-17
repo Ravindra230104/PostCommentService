@@ -55,9 +55,10 @@ This structure keeps code clean, maintainable, and easy to extend with new featu
    ```env
    DB_HOST=localhost
    DB_USER=root
-   DB_PASSWORD=your_password
+   DB_PASS=your_password
    DB_NAME=your_database
    PORT=3000
+   JWT_SECRET=jwt secret
    ```
 5. Start the server: node app.js
 
