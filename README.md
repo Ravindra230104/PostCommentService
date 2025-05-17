@@ -8,10 +8,6 @@ A backend service that allows users to create posts and comments, designed with 
 
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL
-- **ORM / Query Builder**: Raw SQL (or Sequelize if used)
-- **Authentication**: JWT-based (if applicable)
-- **Environment Config**: dotenv
-- **Validation**: express-validator / custom (if any)
 
 ---
 
@@ -25,4 +21,30 @@ A backend service that allows users to create posts and comments, designed with 
 ---
 
 ## 📁 Folder Structure
+
+├── .env
+├── .gitignore
+├── app.js
+
+├── config/
+│   └── db.js
+
+├── controllers/
+│   ├── authController.js
+│   ├── commentController.js
+│   └── postController.js
+
+├── middleware/
+│   └── auth.js
+
+├── models/
+│   ├── Comment.js
+│   ├── Post.js
+│   └── User.js
+
+└── routes/
+    ├── auth.js
+    ├── comments.js
+    └── posts.js
+
 
