@@ -46,3 +46,26 @@ This structure keeps code clean, maintainable, and easy to extend with new featu
 
 
 
+## 🚀 Setup and Run
+
+1. Clone the repository: git clone https://github.com/Ravindra230104/PostCommentService.git
+2. Navigate to the project folder: cd PostCommentService
+3. Install dependencies: npm install
+4. Create a `.env` file in the root directory with your own database credentials. Example `.env`:
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=your_password
+   DB_NAME=your_database
+   PORT=3000
+
+5. Start the server:
+
+
+
+ 
+
+
+   
+
+
+
